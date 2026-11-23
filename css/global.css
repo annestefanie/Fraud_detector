@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Readex+Pro:wght@160..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(13, 2, 19);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100dvh;
+
+}
+a, button { 
+    cursor: pointer;
+}
+
+/* HERO */
+#hero{
+    padding-top: 8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    color: white;
+}
+#hero h1{
+    max-width: 45%;
+    font-size: 2.5rem;
+    font-family: 'Readex Pro', sans-serif;
+    text-align: center;
+}
+#hero p{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    max-width: 25%;
+    font-size: 1rem;
+}
+#hero button{
+    padding: 0.7rem 5rem;
+    border-radius: 10rem;
+    border: 1px solid rgb(210, 164, 236);
+    background-color: #9e77eb;
+    
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    
+    display: flex;
+    gap: 10px;
+}
+#hero a{
+    font-family: 'Google Sans Code', monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #6118e9;
+    
+    position: relative;
+}
+#hero a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: #6118e9;
+    
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+#hero a:hover::after{
+     transform: scaleX(1);
+    }
+/* HERO - END */
+
+/* HOW TO USE */
+#how-to-use-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+#how-to-use-container div{
+    height: 100vh;
+    width: 90vw;
+    background-color: #441f88;
+    border-radius: 5rem;
+}
+/* HOW TO USE - END*/
+
+/* LOGIN */
+#login-container{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: rgba(158, 119, 235, 0.3);
+    z-index: 1;
+    backdrop-filter: blur(2px);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#login-container.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+#login-card{
+    position: relative;
+    z-index: 2;
+    background-color:  rgb(13, 2, 19);
+    width: 30vw;
+    
+    border-radius: 2rem;
+    color: white;
+    overflow: hidden;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+#login-card div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#login-card h2{
+    font-family: 'Readex Pro', sans-serif;
+    text-align: center;
+}
+#login-card p{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+#login-card form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+#login-card input{
+    padding: 10px;
+    height: 3rem;
+    border-radius: 0.7rem;
+    border: 1px solid #441f88;
+    background-color: #9e77eb;
+
+    font-family: 'Google Sans Code', monospace;
+}
+#login-card input::placeholder{
+    color: rgb(13, 2, 19);
+    font-family: 'Google Sans Code', monospace;
+    font-weight: 600;
+}
+#login-card input:focus {
+  border-color: #9e77eb;
+  outline: none; 
+  box-shadow: 0 0 5px #6118e9;
+}
+#login-card button{
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 1px solid #6118e9;
+    background-color: #441f88;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+#switch-container a{
+    font-family: 'Google Sans Code', monospace;
+    color: #9e77eb;
+    font-size: 0.9rem;
+}
+#switch-container{
+    text-align: center;
+}
+/* LOGIN - END */
+
+/* VISIBILITY TOGGLE */
+.toggle-element {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.toggle-element.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+/* VISIBILITY TOGGLE  - END */
+
+/* FOOTER */
+footer{
+    margin-top: 10rem;
+    height: 10rem;
+    background-color: #9e77eb;
+}
