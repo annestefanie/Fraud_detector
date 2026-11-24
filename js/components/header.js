@@ -2,8 +2,7 @@
 export function createHeader() {
   const header = document.createElement("header");
 
-  const isInsidePages = window.location.pathname.includes("/pages/");
-  const basePath = isInsidePages ? "../" : "./";
+  const basePath = "/Fraud_detector/";
 
   header.innerHTML = `
     <a id="fraud-detector" href="${basePath}index.html">
