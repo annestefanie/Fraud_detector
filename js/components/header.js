@@ -7,9 +7,9 @@ export function createHeader() {
             <nav>
                 <div id="underline"></div>
                 <ul>
-                    <li><a id="alerts-link" href="../../pages/alerts.html" >Alerts</a></li>
-                    <li><a id="transactions-link" href="../../pages/transactions.html">Transactions</a></li>
-                    <li><a id="accounts-link" href="../../pages/accounts.html">Accounts</a></li>
+                    <li><a id="alerts-link" href="./../../pages/alerts.html" >Alerts</a></li>
+                    <li><a id="transactions-link" href="./../../pages/transactions.html">Transactions</a></li>
+                    <li><a id="accounts-link" href="./../../pages/accounts.html">Accounts</a></li>
                 </ul>
             </nav>
             <div id="login-btn-container" >
