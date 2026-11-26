@@ -41,11 +41,12 @@ export function createLoginCard(type){
                     </div>
                     <form action="">
                         <input type="email"placeholder="E-mail">
+                        <a>Forgot your password?</a>
                         <input type="password" placeholder="Password">
                         <button>${type}</button>
                     </form>
                     <div id="switch-container">
-                        <p>Already have an account?</p>
+                        <p>Don't have an account?</p>
                         <a href="#" id="switch-login">${opposite}</a>
                     </div>
             

@@ -212,6 +212,14 @@ a, button {
 }
 /* VISIBILITY TOGGLE  - END */
 
+
+/* ACESSIBILITY */
+#acessibility {
+    background-color: #441f88;
+    position: fixed;
+    top: 50%
+    ri
+}
 /* FOOTER */
 footer{
     margin-top: 10rem;

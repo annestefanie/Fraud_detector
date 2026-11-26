@@ -333,3 +333,20 @@
     border: 1px solid #9e77eb; 
     background-color: #6118e9;
 }
+#inputTransactionID{
+    padding: 10px;
+    border-radius: 0.7rem;
+    border: 1px solid #441f88;
+    background-color: white;
+    
+    font-family: 'Google Sans Code', monospace;
+}
+
+/* SEARCH RESULTS */
+#search-results{
+    padding: 1rem;
+}
+#search-results h3{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+}

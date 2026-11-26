@@ -21,7 +21,7 @@ export function createHeader() {
       <button id="darkmode-btn">
         <i class="bi bi-sun"></i>
       </button>
-      <button id="login-btn">Log In</button>
+      <button id="login-btn">Login</button>
     </div>
   `;
 

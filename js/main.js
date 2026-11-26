@@ -11,6 +11,7 @@ const loginContainer = document.querySelector("#login-container");
 
 const addTransactionContainer = document.querySelector("#add-transaction-container")
 const analyseTransactionBtn = document.querySelector("#analyse-transaction-btn")
+const addTransactionBtn = document.querySelector("#add-transaction-btn")
 
 loginButton.addEventListener("click", () => {
     loginContainer.classList.toggle("active");
@@ -30,8 +31,14 @@ analyseTransactionBtn.addEventListener("click", () => {
     addTransactionContainer.classList.toggle("active")
 })
 
+addTransactionBtn.addEventListener("click", () => {
+    addTransactionContainer.append(createAddTransaction())
+    addTransactionContainer.classList.toggle("active")
+})
+
 addTransactionContainer.addEventListener("click", (event) => {
     if (event.target === addTransactionContainer) {
         addTransactionContainer.classList.remove("active");
     }
 });
+
